@@ -1,0 +1,201 @@
+/** @define Test */
+
+/**
+ * The 'describe' CSS counter
+ */
+
+.Test {
+  counter-reset: test-describe;
+}
+
+.Test-describe::before {
+  content: counter(test-describe);
+  counter-increment: test-describe;
+}
+
+/**
+ * The 'it' CSS counter
+ */
+
+.Test-describe {
+  counter-reset: test-it;
+}
+
+.Test-it::before {
+  content: counter(test-describe) "." counter(test-it);
+  counter-increment: test-it;
+}
+
+/**
+ * The test title
+ */
+
+.Test-title {
+  background: #eee;
+  color: #999;
+  font-family: sans-serif;
+  font-size: 2em;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+/**
+ * The test description and expectation titles
+ */
+
+.Test-describe,
+.Test-it {
+  background: #eee;
+  border-left: 5px solid #666;
+  color: #666;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 0.75em 20px;
+}
+
+.Test-describe {
+  font-size: 1.5em;
+  margin: 60px 0 20px;
+}
+
+/**
+ * The counter styles
+ */
+
+.Test-describe::before,
+.Test-it::before {
+  color: #999;
+  display: inline-block;
+  margin-right: 10px;
+  min-width: 30px;
+  text-transform: uppercase;
+}
+
+/**
+ * Colors
+ */
+
+:root {
+
+  /* Basic colors */
+
+  /* Gray colors */
+
+  /* States colors */
+
+  /**
+   * Custom native colors
+   * https://github.com/mrmrs/colors/blob/master/css/colors.css#L44
+   */
+
+  /* Cool */
+
+  /* Warm */
+}
+
+/**
+ * Typographic
+ *
+ * The ratios are based off of the ratios used on modular scale.
+ * https://github.com/corysimmons/typographic
+ */
+
+:root {
+
+  /* Ratios */
+}
+
+/**
+ * Font stack
+ * http://www.awayback.com/revised-font-stack
+ */
+
+:root {
+
+  /* Sans-serif */
+
+  /* Serif */
+}
+
+/**
+ * Base variables
+ */
+
+:root {
+
+  /* Base */
+
+  /* Type variables */
+}
+
+/**
+ * Definition of common properties for components
+ */
+
+/**
+ * Typography
+ */
+
+/**
+ * Headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.125;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 21px;
+  margin-top: 21px;
+}
+
+h4,
+h5,
+h6 {
+  margin-bottom: 10.5px;
+  margin-top: 10.5px;
+}
+
+h1 {
+  font-size: 37.338px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 23.338px;
+}
+
+h4 {
+  font-size: 17.5px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 11.9px;
+}
+
+/**
+ * Paragraph
+ */
+
+p {
+  margin: 0 0 10.5px;
+}
+
