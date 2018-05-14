@@ -2,10 +2,6 @@
 
 [![Build Status](https://travis-ci.org/raulghm/cata-types.svg?branch=master)](https://travis-ci.org/raulghm/cata-types)
 
-`cata-types` 
-
-Read more about how to use [SUIT CSS](https://github.com/suitcss/suit/).
-
 ## Installation
 
 ## NPM 
