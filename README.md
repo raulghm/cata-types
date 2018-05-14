@@ -4,7 +4,7 @@
 
 ## Installation
 
-## NPM 
+## NPM
 ```
 npm install cata-types
 ```
